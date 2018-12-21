@@ -2,7 +2,6 @@ import _ from 'lodash';
 import printMe from './print.js';
 
 
-
 function component() {
 	let element = document.createElement('div');
 	let btn = document.createElement('button');
