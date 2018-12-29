@@ -2,6 +2,7 @@ const path = require( 'path' );
 
 const MiniCssExtractPlugin = require( 'mini-css-extract-plugin' );
 const HtmlWebpackPlugin = require( 'html-webpack-plugin' );
+const WebpackMd5Hash = require( 'webpack-md5-hash' );
 
 
 module.exports = {
@@ -46,6 +47,7 @@ module.exports = {
 			hash: true,
 			template: './src/index.html',
 			filename: 'index.html'
-		} )
+		} ),
+		new WebpackMd5Hash()
 	]
 };
