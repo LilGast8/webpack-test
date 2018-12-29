@@ -3,6 +3,7 @@ const path = require( 'path' );
 const MiniCssExtractPlugin = require( 'mini-css-extract-plugin' );
 const HtmlWebpackPlugin = require( 'html-webpack-plugin' );
 const WebpackMd5Hash = require( 'webpack-md5-hash' );
+const CleanWebpackPlugin = require( 'clean-webpack-plugin' );
 
 
 module.exports = {
@@ -40,6 +41,7 @@ module.exports = {
 		]
 	},
 	plugins: [
+		new CleanWebpackPlugin( 'dist' ),
 		new MiniCssExtractPlugin( {
 			filename: 'style.[contenthash].css'
 		} ),
