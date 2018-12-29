@@ -2,4 +2,7 @@ $color: #7373fe;
 
 div {
 	color: $color;
+	transition: opacity 0.5s ease-in-out;
+	
+	&:hover { opacity: 0.5; }
 }

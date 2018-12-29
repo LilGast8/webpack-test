@@ -1,0 +1,7 @@
+div {
+  color: #7373fe;
+  -webkit-transition: opacity 0.5s ease-in-out;
+  transition: opacity 0.5s ease-in-out; }
+  div:hover {
+    opacity: 0.5; }
+
